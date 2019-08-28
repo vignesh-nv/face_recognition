@@ -118,6 +118,8 @@ history = model.fit_generator(
     validation_steps = int(np.ceil(2300/BATCH_SIZE))
 )
 
+#Save the Model
+model.save('gender_model.h5')
 
 #Test the Model using new image
 image_path="download.jpg"
